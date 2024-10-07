@@ -3,19 +3,24 @@
 <head>
     <title>Lesson 4</title>
     <meta charset="UTF-8"/>
-
     <script src="src/index.js" type="module"></script>
 </head>
-
 <body>
 <h1>Implement the symbolic diff here</h1>
 <div id="container">
-
+    <label for="expression">Выражение:</label>
+    <input type="text" id="expression" placeholder="4*x^3 - x^2" />
+    
+    <label for="variable">Переменная:</label>
+    <input type="text" id="variable" placeholder="x" />
+    
+    <button id="diffButton">Высчитать</button>
+    
+    <h2>Результат:</h2>
+    <div id="result"></div>
 </div>
 <div>
-    <button id="demoButton">
-        Add something
-    </button>
+    <button id="demoButton">Add something</button>
 </div>
 </body>
 </html>
